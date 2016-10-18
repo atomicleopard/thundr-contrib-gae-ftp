@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.threewks.thundr</groupId>
+		<artifactId>thundr-module</artifactId>
+		<version>3.0.0-rc4-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.atomicleopard</groupId>
+	<artifactId>thundr-contrib-gae-ftp</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
+
+	<properties>
+		<thundr.version>3.0.0-rc4-SNAPSHOT</thundr.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- thundr Dependency -->
+		<dependency>
+			<groupId>com.threewks.thundr</groupId>
+			<artifactId>thundr-gae</artifactId>
+			<version>${thundr.version}</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<modelVersion>4.0.0</modelVersion>
+</project>
