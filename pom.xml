@@ -18,6 +18,7 @@
 	</scm>
 	<properties>
 		<thundr.version>3.0.0</thundr.version>
+		<gpg.keyname>26463462</gpg.keyname>
 	</properties>
 	<dependencies>
 		<dependency>
