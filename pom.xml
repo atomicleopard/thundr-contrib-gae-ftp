@@ -3,15 +3,21 @@
 	<parent>
 		<groupId>com.threewks.thundr</groupId>
 		<artifactId>thundr-module</artifactId>
-		<version>3.0.0-rc4-SNAPSHOT</version>
+		<version>3.0.0</version>
 	</parent>
 
 	<groupId>com.atomicleopard</groupId>
 	<artifactId>thundr-contrib-gae-ftp</artifactId>
 	<version>3.0.0-SNAPSHOT</version>
 
+	<scm>
+		<connection>scm:git:https://github.com/atomicleopard/thundr-contrib-gae-ftp</connection>
+		<developerConnection>scm:git:https://github.com/atomicleopard/thundr-contrib-gae-ftp</developerConnection>
+		<url>https://github.com/atomicleopard/thundr-contrib-gae-ftp</url>
+		<tag>HEAD</tag>
+	</scm>
 	<properties>
-		<thundr.version>3.0.0-rc4-SNAPSHOT</thundr.version>
+		<thundr.version>3.0.0</thundr.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -30,5 +36,25 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin> <!-- Generate javadoc -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.3</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 	<modelVersion>4.0.0</modelVersion>
 </project>
